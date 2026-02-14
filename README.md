@@ -3,11 +3,9 @@ Este tutorial explica cómo automatizar la creación del patrón "Flor de la Vid
 
 1. Fundamentos Matemáticos: Coordenadas Polares
 Para posicionar cualquier objeto en un círculo, no se usan coordenadas X e Y de forma directa, sino coordenadas polares (r, θ). Para que Blender entienda dónde colocar un objeto, debemos convertir esas coordenadas polares a Cartesianas usando funciones trigonométricas básicas:
-+1
 
 
-Posición X: radio * coseno(ángulo) 
-+1
+Posición X: radio * coseno(ángulo)
 
 
 Posición Y: radio * seno(ángulo) 
@@ -57,6 +55,5 @@ while angulo_actual < 360:
 
 4. Consideraciones Finales
 Es fundamental que el ciclo se ejecute mientras el ángulo actual sea menor a 360 grados. Dentro del cuerpo del ciclo, se calcula la nueva posición y se llama a la función de Blender para añadir el círculo.
-+1
 
 Recuerda siempre incrementar el ángulo actual sumándole el paso (60 grados) en cada vuelta; de lo contrario, el código creará infinitos círculos en la misma posición.
