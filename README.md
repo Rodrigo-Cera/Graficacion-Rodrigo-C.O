@@ -1,12 +1,7 @@
-Gemini said
-Tutorial: Geometría Generativa en Blender con Python
-Este tutorial explica cómo automatizar la creación del patrón "Flor de la Vida" utilizando scripts de Python y conceptos básicos de trigonometría.
-
 1. Fundamentos Matemáticos: Coordenadas Polares
 Para posicionar cualquier objeto en un círculo, no se usan coordenadas X e Y de forma directa, sino coordenadas polares (r, θ). Para que Blender entienda dónde colocar un objeto, debemos convertir esas coordenadas polares a Cartesianas usando funciones trigonométricas básicas:
 
 Posición X: radio * coseno(ángulo) 
-
 
 Posición Y: radio * seno(ángulo) 
 
