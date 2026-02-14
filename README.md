@@ -26,7 +26,7 @@ Simetría: Para que la figura sea simétrica, dividimos los 360 grados de la cir
 
 3. Implementación del Código
 El siguiente algoritmo sigue los pasos de configuración del entorno, definición de variables y ejecución del patrón repetitivo:
-
+```
 Python
 import bpy
 import math
@@ -54,6 +54,7 @@ while angulo_actual < 360:
     
     # Actualización de estado: Incrementar el ángulo para evitar bucles infinitos
     angulo_actual += paso_angular
+```
 4. Consideraciones Finales
 Es fundamental que el ciclo se ejecute mientras el ángulo actual sea menor a 360 grados. Dentro del cuerpo del ciclo, se calcula la nueva posición y se llama a la función de Blender para añadir el círculo.
 
