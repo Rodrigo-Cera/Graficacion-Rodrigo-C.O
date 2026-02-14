@@ -1,11 +1,11 @@
+Gemini said
 Tutorial: Geometría Generativa en Blender con Python
 Este tutorial explica cómo automatizar la creación del patrón "Flor de la Vida" utilizando scripts de Python y conceptos básicos de trigonometría.
 
 1. Fundamentos Matemáticos: Coordenadas Polares
 Para posicionar cualquier objeto en un círculo, no se usan coordenadas X e Y de forma directa, sino coordenadas polares (r, θ). Para que Blender entienda dónde colocar un objeto, debemos convertir esas coordenadas polares a Cartesianas usando funciones trigonométricas básicas:
 
-
-Posición X: radio * coseno(ángulo)
+Posición X: radio * coseno(ángulo) 
 
 
 Posición Y: radio * seno(ángulo) 
@@ -26,6 +26,8 @@ Simetría: Para que la figura sea simétrica, dividimos los 360 grados de la cir
 
 3. Implementación del Código
 El siguiente algoritmo sigue los pasos de configuración del entorno, definición de variables y ejecución del patrón repetitivo:
+
+Python
 import bpy
 import math
 
@@ -52,8 +54,9 @@ while angulo_actual < 360:
     
     # Actualización de estado: Incrementar el ángulo para evitar bucles infinitos
     angulo_actual += paso_angular
-
 4. Consideraciones Finales
 Es fundamental que el ciclo se ejecute mientras el ángulo actual sea menor a 360 grados. Dentro del cuerpo del ciclo, se calcula la nueva posición y se llama a la función de Blender para añadir el círculo.
 
 Recuerda siempre incrementar el ángulo actual sumándole el paso (60 grados) en cada vuelta; de lo contrario, el código creará infinitos círculos en la misma posición.
+
+¿Te gustaría que te explique cómo cambiar el código para que el usuario pueda elegir el número de círculos desde la interfaz?
