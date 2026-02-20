@@ -52,7 +52,3 @@ while angulo_actual < 360:
 ```
 4. Consideraciones Finales
 Es fundamental que el ciclo se ejecute mientras el ángulo actual sea menor a 360 grados. Dentro del cuerpo del ciclo, se calcula la nueva posición y se llama a la función de Blender para añadir el círculo.
-
-Recuerda siempre incrementar el ángulo actual sumándole el paso (60 grados) en cada vuelta; de lo contrario, el código creará infinitos círculos en la misma posición.
-
-¿Te gustaría que te explique cómo cambiar el código para que el usuario pueda elegir el número de círculos desde la interfaz?
